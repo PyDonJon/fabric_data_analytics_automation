@@ -1,0 +1,2 @@
+coalesce(item()?['TimeInDeficitPct'], 0)
+coalesce(item()?['MaxDeficitEvent'], 0)
