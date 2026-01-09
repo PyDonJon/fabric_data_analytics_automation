@@ -1,0 +1,7 @@
+Avg Daily Consumption = 
+AVERAGEX (
+    VALUES ( 'Date'[Date] ),
+    CALCULATE (
+        SUM ( energy_operations[Consumption] )
+    )
+)
