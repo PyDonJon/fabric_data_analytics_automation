@@ -1,4 +1,4 @@
-## Flow Overview
+## Automate Flow Overview
 
 1. Scheduled trigger (hourly)
 2. Execute DAX query against Fabric dataset
