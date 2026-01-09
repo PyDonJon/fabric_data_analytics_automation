@@ -19,7 +19,7 @@ Automated DAX Query (against Fabric dataset)
    ↓
 Parse JSON response
    ↓
-Normalize (null and type handling)
+Normalize (null and type handling in Condition)
    ↓
 Evaluate Conditions
    ↓
