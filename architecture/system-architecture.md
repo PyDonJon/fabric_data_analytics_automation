@@ -1,7 +1,7 @@
 ## System Architecture
 Data Source
    ↓
-Microsoft Fabric (Warehouse)
+Microsoft Fabric (Lakehouse)
    ↓
 Semantic Model (DAX Measures/Power BI)
    ↓
