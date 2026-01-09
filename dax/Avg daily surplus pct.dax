@@ -1,0 +1,13 @@
+Avg Daily Surplus Pct = 
+VAR DailyTable =
+    SUMMARIZE (
+        energy_operations,
+        'Date'[Date],
+        "DailyProd", SUM ( energy_operations[Production] ),
+        "DailyCons", SUM ( energy_operations[Consumption] )
+    )
+RETURN
+AVERAGEX (
+    DailyTable,
+    DIVIDE ( [DailyProd] - [DailyCons], [DailyCons] )
+)
