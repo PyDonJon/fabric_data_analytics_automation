@@ -1,0 +1,8 @@
+Max Deficit Event = 
+VAR DeficitValue =
+    MINX (
+        ALL ( energy_operations ),
+        energy_operations[Production] - energy_operations[Consumption]
+    )
+RETURN
+DeficitValue
