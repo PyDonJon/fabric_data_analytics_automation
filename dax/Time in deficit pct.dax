@@ -1,0 +1,16 @@
+Time in Deficit Pct = 
+AVERAGEX (
+    SUMMARIZE (
+        energy_operations,
+        energy_operations[Date],
+        energy_operations[Hour],
+        "DeficitFlag",
+            IF (
+                SUM ( energy_operations[Production] )
+                < SUM ( energy_operations[Consumption] ),
+                1,
+                0
+            )
+    ),
+    [DeficitFlag]
+)
